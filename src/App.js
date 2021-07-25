@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import RadiusInput from './components/RadiusInput';
+// import UpdateButton from './components/UpdateButton';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Border Radius Previewer </h1>
+      <RadiusInput className="" id="Top-Left"></RadiusInput>
+      <RadiusInput className="" id="Top-Right"></RadiusInput>
+      <RadiusInput className="" id="Bottom-Left"></RadiusInput>
+      <RadiusInput className="" id="Bottom-Right"></RadiusInput>
+      <div className="box"></div>
     </div>
-  );
+  )
 }
 
 export default App;
